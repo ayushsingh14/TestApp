@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Management App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w sqlite3",
+    "postinstall": "electron-rebuild"
+  },
+  "author": "Ayush",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^10.1.4",
+    "knex": "^0.21.6",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^22.9.1"
+  }
+}
